@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    /* background-image: url('https://deckofcardsapi.com/static/img/back.png'); */
+    /* font-family: Arial, sans-serif; */
+    background-color: #f8f9fa;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    box-shadow: none;
+} */
+
+#card-container {
+    /* margin-top: 20px; */
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+.card {
+    /* display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px; */
+    position: absolute;
+    width: 100px;
+    height: 140px;
+    transform-origin: bottom left;
+    transition: transform 0.3s ease;
+}
+
+#draw-card {
+    margin-top: 20px;
+}
